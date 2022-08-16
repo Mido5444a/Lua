@@ -197,7 +197,7 @@ ZOFly.TextScaled = true
 ZOFly.TextSize = 14.000
 ZOFly.TextWrapped = true
 ZOFly.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet('https://rawscripts.net/raw/FIREBLADE%2BX2-ZO-SAMURAI-Sorry-4341'),true)()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HTDBarsi/ZO/main/bettertp.lua"))()
 end)
 
 --Made By Mido
