@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--Made By Mido
 
 local Megaloge = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
@@ -10,12 +7,11 @@ local username = Instance.new("TextBox")
 local password = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local MadeByMido = Instance.new("TextLabel")
-local megaLogeHax = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
 local PrisonLife = Instance.new("TextButton")
 local jailbreack = Instance.new("TextButton")
-local jailbreack_2 = Instance.new("TextButton")
+local ADMIN = Instance.new("TextButton")
 local Made = Instance.new("TextLabel")
 
 --Properties:
@@ -31,6 +27,7 @@ LoginFrame.Position = UDim2.new(0.359591544, 0, 0.145476773, 0)
 LoginFrame.Size = UDim2.new(0, 346, 0, 421)
 LoginFrame.Active = true
 LoginFrame.Draggable = true 
+
 
 logintitle.Name = "login title"
 logintitle.Parent = LoginFrame
@@ -79,10 +76,10 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:Connect(function()
-if username.Text == "PKS" and password.Text == "Mido" then
+	if username.Text == "PKS" and password.Text == "Mido" then
 		LoginFrame.Visible = false
-		megaLogeHax.Visible = true
-end
+		Frame.Visible = true
+	end
 end)
 
 MadeByMido.Name = "Made By Mido"
@@ -98,17 +95,16 @@ MadeByMido.TextScaled = true
 MadeByMido.TextSize = 14.000
 MadeByMido.TextWrapped = true
 
-megaLogeHax.Name = "mega Loge Hax"
-megaLogeHax.Parent = Megaloge
-megaLogeHax.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-megaLogeHax.LayoutOrder = 1
-megaLogeHax.Position = UDim2.new(0.329686344, 0, 0.216381416, 0)
-megaLogeHax.Size = UDim2.new(0, 466, 0, 378)
-megaLogeHax.Visible = false
-megaLogeHax.Active = true
-megaLogeHax.Draggable = true
+Frame.Parent = Megaloge
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.LayoutOrder = 1
+Frame.Position = UDim2.new(0.329686344, 0, 0.216381416, 0)
+Frame.Size = UDim2.new(0, 466, 0, 378)
+Frame.Visible = false
+Frame.Active = true
+Frame.Draggable = true
 
-TextLabel.Parent = megaLogeHax
+TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 TextLabel.Size = UDim2.new(0, 466, 0, 50)
 TextLabel.Font = Enum.Font.Highway
@@ -118,20 +114,8 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-Close.Name = "Close"
-Close.Parent = megaLogeHax
-Close.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Close.Position = UDim2.new(0.88197422, 0, 0, 0)
-Close.Size = UDim2.new(0, 55, 0, 50)
-Close.Font = Enum.Font.SourceSans
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextScaled = true
-Close.TextSize = 14.000
-Close.TextWrapped = true
-
 PrisonLife.Name = "Prison Life"
-PrisonLife.Parent = megaLogeHax
+PrisonLife.Parent = Frame
 PrisonLife.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 PrisonLife.Position = UDim2.new(0, 0, 0.238095239, 0)
 PrisonLife.Size = UDim2.new(0, 466, 0, 50)
@@ -141,9 +125,12 @@ PrisonLife.TextColor3 = Color3.fromRGB(255, 255, 255)
 PrisonLife.TextScaled = true
 PrisonLife.TextSize = 14.000
 PrisonLife.TextWrapped = true
+PrisonLife.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
 
 jailbreack.Name = "jailbreack"
-jailbreack.Parent = megaLogeHax
+jailbreack.Parent = Frame
 jailbreack.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 jailbreack.Position = UDim2.new(0, 0, 0.465608478, 0)
 jailbreack.Size = UDim2.new(0, 466, 0, 50)
@@ -153,21 +140,27 @@ jailbreack.TextColor3 = Color3.fromRGB(255, 255, 255)
 jailbreack.TextScaled = true
 jailbreack.TextSize = 14.000
 jailbreack.TextWrapped = true
+jailbreack.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+end)
 
-jailbreack_2.Name = "jailbreack"
-jailbreack_2.Parent = megaLogeHax
-jailbreack_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-jailbreack_2.Position = UDim2.new(0, 0, 0.677248716, 0)
-jailbreack_2.Size = UDim2.new(0, 466, 0, 50)
-jailbreack_2.Font = Enum.Font.Bangers
-jailbreack_2.Text = "Admin"
-jailbreack_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-jailbreack_2.TextScaled = true
-jailbreack_2.TextSize = 14.000
-jailbreack_2.TextWrapped = true
+ADMIN.Name = "ADMIN"
+ADMIN.Parent = Frame
+ADMIN.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ADMIN.Position = UDim2.new(0, 0, 0.677248716, 0)
+ADMIN.Size = UDim2.new(0, 466, 0, 50)
+ADMIN.Font = Enum.Font.Bangers
+ADMIN.Text = "Admin"
+ADMIN.TextColor3 = Color3.fromRGB(255, 255, 255)
+ADMIN.TextScaled = true
+ADMIN.TextSize = 14.000
+ADMIN.TextWrapped = true
+ADMIN.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 Made.Name = "Made"
-Made.Parent = megaLogeHax
+Made.Parent = Frame
 Made.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Made.Position = UDim2.new(0, 0, 0.867724895, 0)
 Made.Size = UDim2.new(0, 466, 0, 50)
