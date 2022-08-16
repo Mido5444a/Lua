@@ -13,8 +13,9 @@ local PrisonLife = Instance.new("TextButton")
 local jailbreack = Instance.new("TextButton")
 local ADMIN = Instance.new("TextButton")
 local Made = Instance.new("TextLabel")
+local ZO = Instance.new("TextButton")
+local ZOFly = Instance.new("TextButton")
 
---Properties:
 
 Megaloge.Name = "Mega  loge"
 Megaloge.Parent = game.CoreGui
@@ -26,8 +27,7 @@ LoginFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 LoginFrame.Position = UDim2.new(0.359591544, 0, 0.145476773, 0)
 LoginFrame.Size = UDim2.new(0, 346, 0, 421)
 LoginFrame.Active = true
-LoginFrame.Draggable = true 
-
+LoginFrame.Draggable = true
 
 logintitle.Name = "login title"
 logintitle.Parent = LoginFrame
@@ -76,7 +76,7 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:Connect(function()
-	if username.Text == "PKS" and password.Text == "Mido" then
+if username.Text == "Mido" and password.Text == "00" then
 		LoginFrame.Visible = false
 		Frame.Visible = true
 	end
@@ -98,8 +98,8 @@ MadeByMido.TextWrapped = true
 Frame.Parent = Megaloge
 Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Frame.LayoutOrder = 1
-Frame.Position = UDim2.new(0.329686344, 0, 0.216381416, 0)
-Frame.Size = UDim2.new(0, 466, 0, 378)
+Frame.Position = UDim2.new(0.345003664, 0, 0.201711491, 0)
+Frame.Size = UDim2.new(0, 466, 0, 422)
 Frame.Visible = false
 Frame.Active = true
 Frame.Draggable = true
@@ -117,7 +117,7 @@ TextLabel.TextWrapped = true
 PrisonLife.Name = "Prison Life"
 PrisonLife.Parent = Frame
 PrisonLife.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-PrisonLife.Position = UDim2.new(0, 0, 0.238095239, 0)
+PrisonLife.Position = UDim2.new(0, 0, 0.15989618, 0)
 PrisonLife.Size = UDim2.new(0, 466, 0, 50)
 PrisonLife.Font = Enum.Font.Bangers
 PrisonLife.Text = "Prison Life"
@@ -132,7 +132,7 @@ end)
 jailbreack.Name = "jailbreack"
 jailbreack.Parent = Frame
 jailbreack.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-jailbreack.Position = UDim2.new(0, 0, 0.465608478, 0)
+jailbreack.Position = UDim2.new(0, 0, 0.30921039, 0)
 jailbreack.Size = UDim2.new(0, 466, 0, 50)
 jailbreack.Font = Enum.Font.Bangers
 jailbreack.Text = "jailbreack"
@@ -147,7 +147,7 @@ end)
 ADMIN.Name = "ADMIN"
 ADMIN.Parent = Frame
 ADMIN.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-ADMIN.Position = UDim2.new(0, 0, 0.677248716, 0)
+ADMIN.Position = UDim2.new(0, 0, 0.461608857, 0)
 ADMIN.Size = UDim2.new(0, 466, 0, 50)
 ADMIN.Font = Enum.Font.Bangers
 ADMIN.Text = "Admin"
@@ -158,7 +158,6 @@ ADMIN.TextWrapped = true
 ADMIN.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-
 Made.Name = "Made"
 Made.Parent = Frame
 Made.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -170,3 +169,35 @@ Made.TextColor3 = Color3.fromRGB(255, 255, 255)
 Made.TextScaled = true
 Made.TextSize = 14.000
 Made.TextWrapped = true
+
+ZO.Name = "ZO"
+ZO.Parent = Frame
+ZO.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ZO.Position = UDim2.new(0, 0, 0.603788972, 0)
+ZO.Size = UDim2.new(0, 466, 0, 50)
+ZO.Font = Enum.Font.Bangers
+ZO.Text = "ZO"
+ZO.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZO.TextScaled = true
+ZO.TextSize = 14.000
+ZO.TextWrapped = true
+ZO.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://rawscripts.net/raw/FIREBLADE+X2-ZO-SAMURAI-Sorry-4341"))()
+end)
+
+ZOFly.Name = "ZO Fly"
+ZOFly.Parent = Frame
+ZOFly.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ZOFly.Position = UDim2.new(0, 0, 0.748338699, 0)
+ZOFly.Size = UDim2.new(0, 466, 0, 50)
+ZOFly.Font = Enum.Font.Bangers
+ZOFly.Text = "ZO Fly"
+ZOFly.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZOFly.TextScaled = true
+ZOFly.TextSize = 14.000
+ZOFly.TextWrapped = true
+ZOFly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://rawscripts.net/raw/FIREBLADE%2BX2-ZO-SAMURAI-Sorry-4341'),true)()
+end)
+
+--Made By Mido
